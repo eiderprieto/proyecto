@@ -109,16 +109,17 @@ objetos::objetos(float _x, float _y, float _width, float _heigh, QString picture
 
 objetos::objetos(float _x, float _y, float _width, float _heigh, float _vx, QString picture, QColor _brush, bool direc)
 {
-    px     = _x;
-    py     = _y;
+    py     = _y-15;
     if(direc==true)
     {
         vx = _vx;
+        px = _x+55;
 
     }
     else
     {
         vx = -(_vx);
+        px = _x-55;
     }
 
     width  = _width;

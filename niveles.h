@@ -55,7 +55,6 @@ public slots:
     float CalCantidadA();
     bool Sumaux();
     void moVbalas();
-    float slotBala();
 
 
 private:
@@ -78,12 +77,15 @@ private:
     bool banCoy; //Bandera colisiones obstaculos en y
     bool banCcy;
     bool vderecha = true;
+    bool disbala= true;
+
 
     float h,k;
     float x,y;
     float cont =0;
     float q2;
     float balitas=0;
+
 
 
 

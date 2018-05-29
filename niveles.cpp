@@ -20,14 +20,13 @@ niveles::niveles(QWidget *parent) :
     Td         = new QTimer();
     Ta         = new QTimer();
     Tbalas     = new QTimer();
-    Tproyectil = new QTimer();
+
 
     connect(Tscene,SIGNAL(timeout()),this,SLOT(upScene()));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizacion()));
     connect(Taux,SIGNAL(timeout()),this,SLOT(Sumaux()));
     connect(Td,SIGNAL(timeout()),this,SLOT(CalCantidadD()));
     connect(Ta,SIGNAL(timeout()),this,SLOT(CalCantidadA()));
-    connect(Tproyectil,SIGNAL(timeout()),this,SLOT(slotBala()));
     connect(Tbalas,SIGNAL(timeout()),this,SLOT(moVbalas()));
 
     //ui->graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -37,7 +36,7 @@ niveles::niveles(QWidget *parent) :
     Tscene->start(16);
     Taux->start(5);
     Tbalas->start(5);
-    Tproyectil->start(5);
+
 
 }
 
@@ -148,9 +147,9 @@ void niveles::actualizacion()
         if(jugador->collidesWithItem(obstaculos.at(i)))
         {
             q2= abs((jugador->getPy()-jugador->getCheigh())-(obstaculos.at(i)->getPy()+obstaculos.at(i)->getCheigh()));
-            banCoy = true;
             if(!flag3)//es false cuando no se presiona w
             {
+                banCoy = true;
                 jugador->detectarChoque(jugador,obstaculos.at(i));
             }break;
         }
@@ -161,10 +160,10 @@ void niveles::actualizacion()
         h = cosas.at(i)->getPy()-cosas.at(i)->getCheigh()-(jugador->getPy()+jugador->getCheigh());
         if(cosas.at(i)->collidesWithItem(jugador))
         {
-            banCcy = true;
             if(h>=-1.50){
                 if(!flag)
                 {
+                    banCcy = true;
                     jugador->detectarpiso(jugador,cosas.at(i));
                 }
             }break;
@@ -223,29 +222,54 @@ bool niveles::Sumaux()
 
 void niveles::moVbalas()
 {
+
     for(int i =0;i<balas.length();i++)
     {
         balas.at(i)->movBala();
+
+        QList <QGraphicsItem *> colliding_items = balas.at(i)->collidingItems();
+        for(int i=0;i<colliding_items.size();i++){
+            if(typeid(*(colliding_items[i]))==typeid(objetos)){
+                scene->removeItem(balas.at(i));
+                balas.removeAt(i);
+                return;
+            }
+        }
+        if(balas.at(i)->getPx()>jugador->getPx()+700)
+        {
+            scene->removeItem(balas.at(i));
+            balas.removeAt(i);
+
+        }
+        else if(balas.at(i)->getPx()<jugador->getPx()-800)
+        {
+            scene->removeItem(balas.at(i));
+            balas.removeAt(i);
+        }
+    }
+
+    if(balas.length()==0)
+    {
+        disbala = true;
+        Tbalas->stop();
     }
 }
-
-float niveles::slotBala()
-{
-    balitas++;
-    if (balitas>10)
-        balitas = 0;
-    return balitas;
-}
-
 
 
 void niveles::keyPressEvent(QKeyEvent *ev)
 {
     if(ev->key()==Qt::Key_F)
-    {
-        if(slotBala()<4)
+    {   if(disbala)
         {
-          balas.append(new objetos(jugador->getPx(),jugador->getPy(),50,10,200,":/imagenes/rectangulo.jpg",Qt::black,vderecha));
+          Tbalas->start(5);
+          balas.append(new objetos(jugador->getPx(),jugador->getPy(),50,10,300,":/imagenes/rectangulo.jpg",Qt::black,vderecha));
+          scene->addItem(balas.last());
+
+          disbala = false;
+        }
+        if(abs(balas.last()->getPx()-jugador->getPx())>200)
+        {
+          balas.append(new objetos(jugador->getPx(),jugador->getPy(),50,10,300,":/imagenes/rectangulo.jpg",Qt::black,vderecha));
           scene->addItem(balas.last());
         }
     }
