@@ -55,6 +55,7 @@ public slots:
     float CalCantidadA();
     bool Sumaux();
     void moVbalas();
+    float slotBala();
 
 
 private:
@@ -69,7 +70,7 @@ private:
 
     void keyPressEvent(QKeyEvent *ev);
     void keyReleaseEvent(QKeyEvent *ev);
-    QTimer *timer,*Tscene,*Taux,*Td,*Ta,*Tbalas;
+    QTimer *timer,*Tscene,*Taux,*Td,*Ta,*Tbalas,*Tproyectil;
 
     bool flag = true;// permite saltar al objeto cuando colisiona con cosas
     bool m; //determinar direcciones del jugador
@@ -82,6 +83,7 @@ private:
     float x,y;
     float cont =0;
     float q2;
+    float balitas=0;
 
 
 

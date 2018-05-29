@@ -7,7 +7,7 @@
 #include <QPixmap>
 #include <QGraphicsScene>
 
-#define t 0.001
+#define t 0.01
 
 class objetos : public QObject, public QGraphicsItem
 {

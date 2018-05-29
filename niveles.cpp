@@ -14,18 +14,21 @@ niveles::niveles(QWidget *parent) :
 
     ui->graphicsView->setScene(scene);
 
-    timer  = new QTimer();
-    Tscene = new QTimer();
-    Taux   = new QTimer();
-    Td     = new QTimer();
-    Ta     = new QTimer();
-    Tbalas = new QTimer();
+    timer      = new QTimer();
+    Tscene     = new QTimer();
+    Taux       = new QTimer();
+    Td         = new QTimer();
+    Ta         = new QTimer();
+    Tbalas     = new QTimer();
+    Tproyectil = new QTimer();
 
     connect(Tscene,SIGNAL(timeout()),this,SLOT(upScene()));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizacion()));
     connect(Taux,SIGNAL(timeout()),this,SLOT(Sumaux()));
     connect(Td,SIGNAL(timeout()),this,SLOT(CalCantidadD()));
     connect(Ta,SIGNAL(timeout()),this,SLOT(CalCantidadA()));
+    connect(Tproyectil,SIGNAL(timeout()),this,SLOT(slotBala()));
+    connect(Tbalas,SIGNAL(timeout()),this,SLOT(moVbalas()));
 
     //ui->graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     //ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -33,7 +36,8 @@ niveles::niveles(QWidget *parent) :
     timer->start(1);
     Tscene->start(16);
     Taux->start(5);
-    Tbalas->start(100);
+    Tbalas->start(5);
+    Tproyectil->start(5);
 
 }
 
@@ -214,19 +218,38 @@ bool niveles::Sumaux()
        m =  true;
        flagDirAnt = flagDir;
     }
-    qDebug()<<vderecha;
     return m;
 }
 
 void niveles::moVbalas()
 {
+    for(int i =0;i<balas.length();i++)
+    {
+        balas.at(i)->movBala();
+    }
+}
 
+float niveles::slotBala()
+{
+    balitas++;
+    if (balitas>10)
+        balitas = 0;
+    return balitas;
 }
 
 
 
 void niveles::keyPressEvent(QKeyEvent *ev)
 {
+    if(ev->key()==Qt::Key_F)
+    {
+        if(slotBala()<4)
+        {
+          balas.append(new objetos(jugador->getPx(),jugador->getPy(),50,10,200,":/imagenes/rectangulo.jpg",Qt::black,vderecha));
+          scene->addItem(balas.last());
+        }
+    }
+
     if(ev->key()==Qt::Key_W)
     {
        if(jugador->getPy()==500-jugador->getCheigh()){

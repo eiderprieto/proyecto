@@ -161,4 +161,5 @@ void objetos::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, Q
 void objetos::movBala()
 {
     px = px + vx*t;
+    this->setPos(px,py);
 }
