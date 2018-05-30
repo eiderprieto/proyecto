@@ -12,12 +12,13 @@
 #include <QPixmap>
 #include <math.h>
 #include <iostream>
+
 #include "player.h"
 #include "objetos.h"
+#include "menu.h"
 
 
 using namespace std ;
-
 
 namespace Ui {
 class niveles;

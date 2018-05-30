@@ -35,9 +35,11 @@ public:
 private slots:
     void on_login_clicked();
 
+    void on_salir_clicked();
+
 private:
     Ui::usuario *ui;
-    menu *ventana;
+
     QMessageBox mensaje;
 };
 

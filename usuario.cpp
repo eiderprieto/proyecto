@@ -20,14 +20,18 @@ void usuario::on_login_clicked()
 
     if((nombre1 == nombre)&&(contra1 == contra))
     {
-            ventana = new menu();
-            ventana->show();
-            this->close();
+        menu *ventana = new menu();
+        //ventana->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);//quitar los bordes y botones
+        //ventana->setAttribute(Qt::WA_TranslucentBackground);//ponerla transparente
+        ventana->show();
+        this->close();
     }
 
     else if((nombre1 == Njulian)&&(contra1==ContraJulian))
     {
-            ventana = new menu();
+            menu *ventana = new menu();
+          //  ventana->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);//quitar los bordes y botones
+          //  ventana->setAttribute(Qt::WA_TranslucentBackground);//ponerla transparente
             ventana->show();
             this->close();
     }
@@ -63,4 +67,9 @@ void usuario::on_login_clicked()
     }
 
 
+}
+
+void usuario::on_salir_clicked()
+{
+    this->close();
 }

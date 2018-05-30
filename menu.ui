@@ -19,17 +19,25 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="atras">
    <property name="geometry">
     <rect>
      <x>540</x>
      <y>410</y>
-     <width>80</width>
-     <height>21</height>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Rockwell Extra Bold</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
-    <string>Go Back</string>
+    <string>Log Out</string>
    </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">

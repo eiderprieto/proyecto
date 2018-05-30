@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QGraphicsItem>
 #include "niveles.h"
+#include "usuario.h"
 
 //comentario
 
@@ -38,9 +39,11 @@ private slots:
 
     void on_nivel9_clicked();
 
+    void on_atras_clicked();
+
 private:
     Ui::menu *ui;
-    niveles *escenarios;
+
 };
 
 #endif // MENU_H
