@@ -21,6 +21,11 @@ niveles::niveles(QWidget *parent) :
     Ta         = new QTimer();
     Tbalas     = new QTimer();
 
+    mensaje = new QMessageBox();
+    mensaje->setText("¿Do you Wanna save progress?");
+    mensaje->setWindowTitle(" ");
+    mensaje->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    mensaje->setStandardButtons(QMessageBox::Save|QMessageBox::Cancel);
 
     connect(Tscene,SIGNAL(timeout()),this,SLOT(upScene()));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizacion()));
@@ -96,8 +101,9 @@ void niveles::objetosN1()
 
 
     QPen mypen(Qt::yellow);
-    jugador = new player(0,200,50,70);
+    jugador = new player(700,200,50,70);
     scene->addItem(jugador);
+    ui->graphicsView->setFocus();
 }
 
 void niveles::objetosN2()
@@ -258,6 +264,12 @@ void niveles::moVbalas()
 
 void niveles::keyPressEvent(QKeyEvent *ev)
 {
+    if(ev->key()==Qt::Key_F1)
+    {
+        mensaje->show();
+
+    }
+
     if(ev->key()==Qt::Key_F)
     {   if(disbala)
         {
@@ -290,8 +302,6 @@ void niveles::keyPressEvent(QKeyEvent *ev)
               break;
            }
        }
-
-
        for(int i =obstaculos.length()-1;i>=0;i--)
        {
            if(jugador->collidesWithItem(obstaculos.at(i)))
@@ -309,6 +319,7 @@ void niveles::keyPressEvent(QKeyEvent *ev)
            }
        }
     }
+
    else if(ev->key()==Qt::Key_S)
     {  
         flag = true;

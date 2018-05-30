@@ -218,6 +218,7 @@ void player::mover()
     velocidad();
     posicion();
 
+
     this->setPos(px,py);
 }
 

@@ -56,8 +56,9 @@ void usuario::on_login_clicked()
         mensaje.setText("Contraseña incorrecta");
         mensaje.setStandardButtons(QMessageBox::Close);
         mensaje.setDefaultButton(QMessageBox::Close);
-        mensaje.show();
+        mensaje.exec();
     }
+
     else if(nombre1==Njulian && contra1==contra)
     {
         mensaje.setText("Contraseña incorrecta");
@@ -65,7 +66,6 @@ void usuario::on_login_clicked()
         mensaje.setDefaultButton(QMessageBox::Close);
         mensaje.show();
     }
-
 
 }
 

@@ -12,6 +12,7 @@
 #include <QPixmap>
 #include <math.h>
 #include <iostream>
+#include <QMessageBox>
 
 #include "player.h"
 #include "objetos.h"
@@ -66,6 +67,7 @@ private:
     QList<objetos*>cosas;
     QList<objetos*>obstaculos;
     QList<objetos*>balas;
+    QMessageBox *mensaje;
 
 
     void keyPressEvent(QKeyEvent *ev);
