@@ -32,10 +32,10 @@ niveles::niveles(QWidget *parent) :
     //ui->graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     //ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    timer->start(1);
+    timer->start(2);
     Tscene->start(16);
-    Taux->start(5);
-    Tbalas->start(5);
+    Taux->start(20);
+    Tbalas->start(10);
 
 
 }
