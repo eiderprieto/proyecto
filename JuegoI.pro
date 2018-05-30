@@ -29,7 +29,8 @@ SOURCES += \
     menu.cpp \
     player.cpp \
     objetos.cpp \
-    usuario.cpp
+    usuario.cpp \
+    opciones.cpp
 
 HEADERS += \
     niveles.h \
@@ -37,12 +38,14 @@ HEADERS += \
     menu.h \
     player.h \
     objetos.h \
-    usuario.h
+    usuario.h \
+    opciones.h
 
 FORMS += \
     niveles.ui \
     menu.ui \
-    usuario.ui
+    usuario.ui \
+    opciones.ui
 
 RESOURCES += \
     imagenes.qrc

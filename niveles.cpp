@@ -27,6 +27,8 @@ niveles::niveles(QWidget *parent) :
     mensaje->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     mensaje->setStandardButtons(QMessageBox::Save|QMessageBox::Cancel);
 
+
+
     connect(Tscene,SIGNAL(timeout()),this,SLOT(upScene()));
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizacion()));
     connect(Taux,SIGNAL(timeout()),this,SLOT(Sumaux()));

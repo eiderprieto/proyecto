@@ -4,9 +4,14 @@
 #include <QWidget>
 #include <QString>
 #include <QMessageBox>
+#include <QStringList>
+#include <QVector>
+#include <QDebug>
+#include <QFile>
 
 
 #include "menu.h"
+#include "opciones.h"
 
 namespace Ui {
 class usuario;
@@ -17,16 +22,10 @@ class usuario : public QWidget
     Q_OBJECT
 
 
-    //usuario eider
-    QString nombre="eiderprieto";
-    QString contra="locarios1";
+    QString nombre,contra,contra1;
 
-    //usuario julian
-    QString Njulian="julian";
-    QString ContraJulian="mauricio";
-
-
-    QString nombre1,contra1;
+    QVector<QString> usuarios={"eider","julian"};
+    QVector<QString> contrasenas={"locarios","mauricio"};
 
 public:
     explicit usuario(QWidget *parent = 0);
@@ -37,10 +36,14 @@ private slots:
 
     void on_salir_clicked();
 
+    void on_create_clicked();
+
 private:
     Ui::usuario *ui;
+    bool flag =0;
 
-    QMessageBox mensaje;
+
+    QMessageBox mensaje,mensaje1;
 };
 
 #endif // USUARIO_H
