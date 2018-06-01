@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 
 
     usuario w;
-   // w.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);//quitar los bordes y botones
-   // w.setAttribute(Qt::WA_TranslucentBackground);//ponerla transparente
+    //w.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);//quitar los bordes y botones
+    //w.setAttribute(Qt::WA_TranslucentBackground);//ponerla transparente
     w.show();
 
     return a.exec();

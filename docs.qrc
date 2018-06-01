@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>documentos/pass.txt</file>
+        <file>documentos/user.txt</file>
+    </qresource>
+</RCC>
