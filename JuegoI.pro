@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,7 +30,10 @@ SOURCES += \
     player.cpp \
     objetos.cpp \
     usuario.cpp \
-    opciones.cpp
+    opciones.cpp \
+    batle.cpp \
+    inicio.cpp \
+    instrucciones.cpp
 
 HEADERS += \
     niveles.h \
@@ -39,13 +42,19 @@ HEADERS += \
     player.h \
     objetos.h \
     usuario.h \
-    opciones.h
+    opciones.h \
+    batle.h \
+    inicio.h \
+    instrucciones.h
 
 FORMS += \
     niveles.ui \
     menu.ui \
     usuario.ui \
-    opciones.ui
+    opciones.ui \
+    batle.ui \
+    inicio.ui \
+    instrucciones.ui
 
 RESOURCES += \
     imagenes.qrc \

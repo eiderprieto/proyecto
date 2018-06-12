@@ -8,7 +8,11 @@
 #include <math.h>
 #include <QPixmap>
 #include <QTimer>
+
+
 #include "objetos.h"
+
+#include <QString>
 
 #define g 160
 #define dt 0.006
@@ -25,25 +29,34 @@ class player : public QObject, public QGraphicsItem
 
   int  health = 1000;
 
+  int frame=0,frame1=5,estatico = 10,estatico1=9;
+
 
   QPixmap imagen;
+  QString imagen1;
+  QString Izquierda = ":/imagenes/jugador 2.0/izquierda/saltoizquierda.png";
+  QString Derecha = ":/imagenes/jugador 2.0/derecha/saltoDerecha.png";
 
     Q_OBJECT
 public:
-   player(float _x, float _y,float _width, float _heigh);
+   player(float _x, float _y,float _width, float _heigh,QString picture);
+
    QRectF boundingRect() const;
    void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget);
 
-
+   QTimer *timer;
+   objetos *vista;
 
   // movimient's methods
    void aceleracion();
    void posicion();
+   void posicionvs();
    void velocidad();
 
    void colision();
    void mover();
-  //end moviment's methods
+   void movervs();
+   //end moviment's methods
 
 
    // get methods
@@ -75,7 +88,12 @@ public:
    void detectarpiso(player *p, objetos *o);
    void detectarChoque(player *p, objetos *o);
 
+   QPixmap getImagen() const;
+   void setImagen(const QPixmap &value);
 
+public slots:
+   void sprites();
+   void iniciar(void);
 
 
 
@@ -84,7 +102,6 @@ public:
 
 signals:
 
-public slots:
 };
 
 #endif // PLAYER_H

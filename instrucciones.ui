@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>instrucciones</class>
+ <widget class="QWidget" name="instrucciones">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#instrucciones{
+border-radius: 30px;
+}
+
+</string>
+  </property>
+  <widget class="QLabel" name="imagen">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#imagen{
+background-image: url(:/imagenes/Instrucciones.png);
+border-radius: 30px;  border: 5px solid gray;
+}
+#imagen:hover{
+border-radius: 30px;
+ border:5px solid #42aaf4
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="w1">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>77</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#w1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#w1:hover{
+border-color: #5ff44b
+}
+
+</string>
+   </property>
+   <property name="lineWidth">
+    <number>6</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="a1">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>141</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#a1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#a1:hover{
+border-color: #5ff44b
+}
+
+</string>
+   </property>
+   <property name="lineWidth">
+    <number>6</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="s1">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>206</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#s1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#s1:hover{
+border-color: #5ff44b
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="d1">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>269</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#d1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#d1:hover{
+border-color: #5ff44b
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="j1">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>77</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#j1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#j1:hover{
+border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="k1">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>131</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#k1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#k1:hover{
+border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="f1">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>185</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#f1{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#f1:hover{
+border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="f2">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>239</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#f2{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#f2:hover{
+border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="f3">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>293</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#f3{
+border:5px solid #42aaf4; border-radius: 5px;
+}
+#f3:hover{
+border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="volver">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>0</y>
+     <width>35</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#volver{
+background-image: url(:/imagenes/cerrar1.png);
+}
+#volver:hover{
+background-image: url(:/imagenes/cerrar.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>321</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cel{
+background-image: url(:/imagenes/celular1.png);
+}
+
+#cel:hover{
+background-image: url(:/imagenes/celular.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bluethooth">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>320</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#bluethooth{
+	background-image: url(:/imagenes/bluethooth.png);
+}
+#bluethooth:hover{
+	background-image: url(:/imagenes/bluethooth1.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="appInventor">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>277</y>
+     <width>117</width>
+     <height>117</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/imagenes/appInventor.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

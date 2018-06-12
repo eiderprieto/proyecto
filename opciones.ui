@@ -22,68 +22,166 @@
   <widget class="QPushButton" name="arcade">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>110</y>
-     <width>91</width>
-     <height>61</height>
+     <x>241</x>
+     <y>80</y>
+     <width>109</width>
+     <height>70</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#arcade
+{
+   border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/Arcade.png);
+}
+#arcade:hover
+{
+ border:7px solid #5cfdff;
+}
+</string>
+   </property>
    <property name="text">
-    <string>arcade</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="battle">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>190</y>
-     <width>91</width>
-     <height>61</height>
+     <x>241</x>
+     <y>160</y>
+     <width>109</width>
+     <height>69</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#battle
+{
+   border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/batalla vs.png);
+}
+#battle:hover
+{
+ border:7px solid #5cfdff;
+
+}</string>
+   </property>
    <property name="text">
-    <string>battle</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>370</y>
-     <width>75</width>
-     <height>23</height>
+     <x>493</x>
+     <y>360</y>
+     <width>104</width>
+     <height>35</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Go back</string>
+   <property name="styleSheet">
+    <string notr="true">#back
+{
+   border:3px solid #42aaf4; border-radius: 10px;
+   background-image: url(:/imagenes/volver.png);
+
+}
+#back:hover
+{
+ border:5px solid #5cfdff;
+
+}</string>
    </property>
-  </widget>
-  <widget class="QPushButton" name="close">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>0</y>
-     <width>41</width>
-     <height>23</height>
-    </rect>
-   </property>
    <property name="text">
-    <string>X</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="instruccions">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>310</y>
-     <width>75</width>
-     <height>23</height>
+     <x>253</x>
+     <y>260</y>
+     <width>88</width>
+     <height>28</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#instruccions
+{
+   border:5px solid #42aaf4; border-radius: 10px;
+	background-image: url(:/imagenes/como jugar.png);
+}
+#instruccions:hover
+{
+ border:7px solid #5cfdff;
+
+}</string>
+   </property>
    <property name="text">
-    <string>How to Play</string>
+    <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="imagen">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#imagen
+{
+    border: 5px solid #42aaf4;
+    border-radius: 15px;
+}
+#imagen:hover
+{
+ border:5px solid #5cfdff;
+
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usuarios">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>211</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Script</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#usuarios{color: #ff7700;}
+#usuarios:hover{color:rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>imagen</zorder>
+  <zorder>arcade</zorder>
+  <zorder>battle</zorder>
+  <zorder>back</zorder>
+  <zorder>instruccions</zorder>
+  <zorder>usuarios</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -1,6 +1,113 @@
 <RCC>
     <qresource prefix="/">
-        <file>imagenes/cuadrado.jpg</file>
-        <file>imagenes/rectangulo.jpg</file>
+        <file>imagenes/FIMAGENES.png</file>
+        <file>imagenes/vida.png</file>
+        <file>imagenes/fondo.png</file>
+        <file>imagenes/crear.png</file>
+        <file>imagenes/ingresar.png</file>
+        <file>imagenes/LOADING-BLANCO.gif</file>
+        <file>imagenes/usuario.gif</file>
+        <file>imagenes/cancel.png</file>
+        <file>imagenes/error.png</file>
+        <file>imagenes/crea tu cuenta.png</file>
+        <file>imagenes/menu.png</file>
+        <file>imagenes/sended.png</file>
+        <file>imagenes/sended111.png</file>
+        <file>imagenes/cerrar.png</file>
+        <file>imagenes/cerrar1.png</file>
+        <file>imagenes/Instrucciones.png</file>
+        <file>imagenes/arrow1.png</file>
+        <file>imagenes/arrowo.png</file>
+        <file>imagenes/celular.png</file>
+        <file>imagenes/celular1.png</file>
+        <file>imagenes/flecha1.png</file>
+        <file>imagenes/flecha-1.png</file>
+        <file>imagenes/bluethooth.png</file>
+        <file>imagenes/bluethooth1.png</file>
+        <file>imagenes/ingreso.gif</file>
+        <file>imagenes/ingreso1.gif</file>
+        <file>imagenes/Arcade.png</file>
+        <file>imagenes/batalla vs.png</file>
+        <file>imagenes/como jugar.png</file>
+        <file>imagenes/volver.png</file>
+        <file>imagenes/nuclear1.jpg</file>
+        <file>imagenes/ratas 2.0/derecha/1DR.png</file>
+        <file>imagenes/ratas 2.0/derecha/2DR.png</file>
+        <file>imagenes/ratas 2.0/derecha/3DR.png</file>
+        <file>imagenes/ratas 2.0/derecha/4DR.png</file>
+        <file>imagenes/ratas 2.0/derecha/5DR.png</file>
+        <file>imagenes/ratas 2.0/izquierda/1LR.png</file>
+        <file>imagenes/ratas 2.0/izquierda/2LR.png</file>
+        <file>imagenes/ratas 2.0/izquierda/3LR.png</file>
+        <file>imagenes/ratas 2.0/izquierda/4LR.png</file>
+        <file>imagenes/ratas 2.0/izquierda/5LR.png</file>
+        <file>imagenes/jugador 2.0/derecha/1.png</file>
+        <file>imagenes/jugador 2.0/derecha/2.png</file>
+        <file>imagenes/jugador 2.0/derecha/3.png</file>
+        <file>imagenes/jugador 2.0/derecha/4.png</file>
+        <file>imagenes/jugador 2.0/izquierda/5.png</file>
+        <file>imagenes/jugador 2.0/izquierda/6.png</file>
+        <file>imagenes/jugador 2.0/izquierda/7.png</file>
+        <file>imagenes/jugador 2.0/izquierda/8.png</file>
+        <file>imagenes/jugador 2.0/derecha/saltoDerecha.png</file>
+        <file>imagenes/jugador 2.0/izquierda/saltoizquierda.png</file>
+        <file>imagenes/balas 2.0/1c.png</file>
+        <file>imagenes/balas 2.0/2c.png</file>
+        <file>imagenes/balas 2.0/3c.png</file>
+        <file>imagenes/balas 2.0/4c.png</file>
+        <file>imagenes/jugador 2.0/vidas/vidaJugador.png</file>
+        <file>imagenes/ratas 2.0/vidas/vidaEnemigos.png</file>
+        <file>imagenes/escenarios/bordes.jpg</file>
+        <file>imagenes/escenarios/fondo1.png</file>
+        <file>imagenes/escenarios/ladrillo gris 1.png</file>
+        <file>imagenes/escenarios/ladrillos gris 2.png</file>
+        <file>imagenes/escenarios/ladrillos gris 3.png</file>
+        <file>imagenes/escenarios/ladrillos.png</file>
+        <file>imagenes/escenarios/cuadrado.jpg</file>
+        <file>imagenes/niveles/1 boqueado.png</file>
+        <file>imagenes/niveles/1.png</file>
+        <file>imagenes/niveles/2 bloqueado.png</file>
+        <file>imagenes/niveles/2.png</file>
+        <file>imagenes/niveles/3 bloquead.png</file>
+        <file>imagenes/niveles/3.png</file>
+        <file>imagenes/niveles/4 bloqueado.png</file>
+        <file>imagenes/niveles/4.png</file>
+        <file>imagenes/niveles/5 bloqueado.png</file>
+        <file>imagenes/niveles/5.png</file>
+        <file>imagenes/niveles/6 bloqueado.png</file>
+        <file>imagenes/niveles/6.png</file>
+        <file>imagenes/niveles/7 bloqueado.png</file>
+        <file>imagenes/niveles/7.png</file>
+        <file>imagenes/niveles/8 bloqueado.png</file>
+        <file>imagenes/niveles/8.png</file>
+        <file>imagenes/niveles/9 bloqueado.png</file>
+        <file>imagenes/niveles/9.png</file>
+        <file>imagenes/escenarios/alcantarilla 2.png</file>
+        <file>imagenes/escenarios/alcantarilla.png</file>
+        <file>imagenes/puerta/puerta.png</file>
+        <file>imagenes/vida/health1.png</file>
+        <file>imagenes/vida/health2.png</file>
+        <file>imagenes/vida/health3.png</file>
+        <file>imagenes/vida/health4.png</file>
+        <file>imagenes/vida/health5.png</file>
+        <file>imagenes/reload.png</file>
+        <file>imagenes/reload1.png</file>
+        <file>imagenes/moneda1.png</file>
+        <file>imagenes/monedas/0.png</file>
+        <file>imagenes/monedas/1.png</file>
+        <file>imagenes/monedas/2.png</file>
+        <file>imagenes/monedas/3.png</file>
+        <file>imagenes/monedas/4.png</file>
+        <file>imagenes/monedas/5.png</file>
+        <file>imagenes/monedas/6.png</file>
+        <file>imagenes/monedas/7.png</file>
+        <file>imagenes/monedas/8.png</file>
+        <file>imagenes/monedas/9.png</file>
+        <file>imagenes/appInventor.png</file>
+        <file>imagenes/ratas 2.0/derecha/nuevas ratas/1.png</file>
+        <file>imagenes/ratas 2.0/derecha/nuevas ratas/2.png</file>
+        <file>imagenes/ratas 2.0/izquierda/nuevas ratas/1.png</file>
+        <file>imagenes/ratas 2.0/izquierda/nuevas ratas/2.png</file>
+        <file>imagenes/gif puntaje/puntaje.png</file>
     </qresource>
 </RCC>

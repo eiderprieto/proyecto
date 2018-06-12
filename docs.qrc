@@ -1,6 +1,13 @@
 <RCC>
     <qresource prefix="/">
-        <file>documentos/pass.txt</file>
-        <file>documentos/user.txt</file>
+        <file>documentos/nivel1.txt</file>
+        <file>documentos/nivel2.txt</file>
+        <file>documentos/batalla1.txt</file>
+        <file>documentos/nivel3.txt</file>
+        <file>documentos/nivel4.txt</file>
+        <file>documentos/nivel5.txt</file>
+        <file>documentos/nivel6.txt</file>
+        <file>documentos/nivel7.txt</file>
+        <file>documentos/nivel8.txt</file>
     </qresource>
 </RCC>

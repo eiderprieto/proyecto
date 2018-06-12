@@ -37,10 +37,10 @@
   <widget class="QPushButton" name="salir">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>567</x>
      <y>0</y>
-     <width>31</width>
-     <height>23</height>
+     <width>34</width>
+     <height>34</height>
     </rect>
    </property>
    <property name="font">
@@ -49,11 +49,26 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#salir
+{
+background-image: url(:/imagenes/cerrar1.png);
+}
+
+#salir:hover
+{
+background-image: url(:/imagenes/cerrar.png);
+
+}</string>
+   </property>
    <property name="text">
-    <string>X</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -73,6 +88,11 @@
           <pointsize>16</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">#label{color: #ff7700;}
+#label:hover{color:rgb(255, 255, 255);
+}</string>
+        </property>
         <property name="text">
          <string>USUARIO</string>
         </property>
@@ -89,8 +109,38 @@
       </item>
       <item>
        <widget class="QLineEdit" name="Nombreusuario">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#Nombreusuario{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 20px;
+    background: transparent;
+}
+
+#Nombreusuario:hover{
+	background : rgb(119, 212, 255);   
+    border: 2px solid #c0c2db;
+ 
+}
+
+#Nombreusuario:selected{
+	background : rgb(119, 212, 255);
+}</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+        <property name="cursorMoveStyle">
+         <enum>Qt::VisualMoveStyle</enum>
         </property>
        </widget>
       </item>
@@ -102,6 +152,11 @@
           <pointsize>16</pointsize>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">#label_2{color: #ff7700;}
+#label_2:hover{color:rgb(255, 255, 255);
+}</string>
+        </property>
         <property name="text">
          <string>Contraseña</string>
         </property>
@@ -112,8 +167,32 @@
       </item>
       <item>
        <widget class="QLineEdit" name="contra">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#contra{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 20px;
+    background: transparent;
+}
+
+
+
+#contra:hover{
+	background : rgb(119, 212, 255);
+    border: 2px #c0c2db
+}</string>
+        </property>
         <property name="inputMethodHints">
          <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
         </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
@@ -125,6 +204,12 @@
       </item>
       <item>
        <widget class="QPushButton" name="login">
+        <property name="minimumSize">
+         <size>
+          <width>135</width>
+          <height>34</height>
+         </size>
+        </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
@@ -134,17 +219,29 @@
         <property name="autoFillBackground">
          <bool>false</bool>
         </property>
+        <property name="styleSheet">
+         <string notr="true">#login{
+background-image: url(:/imagenes/ingresar.png);
+border:5px solid #42aaf4; border-radius: 10px;
+
+}
+
+#login:hover
+{
+ border:7px solid #5cfdff;
+}</string>
+        </property>
         <property name="inputMethodHints">
          <set>Qt::ImhNone</set>
         </property>
         <property name="text">
-         <string>LOGIN</string>
+         <string/>
         </property>
         <property name="shortcut">
          <string notr="true"/>
         </property>
         <property name="flat">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -166,43 +263,34 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_5">
       <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
          <widget class="QLabel" name="label_3">
-          <property name="font">
-           <font>
-            <family>Source Code Pro</family>
-            <pointsize>12</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
           </property>
-          <property name="layoutDirection">
-           <enum>Qt::LeftToRight</enum>
-          </property>
-          <property name="text">
-           <string>¿Aun no estas registrado?</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="font">
-           <font>
-            <family>Source Code Pro</family>
-            <pointsize>12</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/imagenes/crea tu cuenta.png);
+  border-radius: 15px;</string>
           </property>
           <property name="text">
-           <string>Crea tu cuenta</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
+           <string/>
           </property>
          </widget>
         </item>
@@ -220,11 +308,16 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">#label_4{color: #ff7700;}
+#label_4:hover{color:rgb(255, 255, 255);
+}</string>
+              </property>
               <property name="text">
-               <string>NickName:</string>
+               <string>Nombre:</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -238,11 +331,16 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">#label_5{color: #ff7700;}
+#label_5:hover{color:rgb(255, 255, 255);
+}</string>
+              </property>
               <property name="text">
-               <string>Password:</string>
+               <string>Contraseña:</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -256,6 +354,11 @@
                 <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">#label_6{color: #ff7700;}
+#label_6:hover{color:rgb(255, 255, 255);
+}</string>
+              </property>
               <property name="inputMethodHints">
                <set>Qt::ImhNone</set>
               </property>
@@ -263,7 +366,7 @@
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string> Confirm Pass:</string>
+               <string>Contraseña:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -276,6 +379,28 @@
            <layout class="QVBoxLayout" name="verticalLayout_3">
             <item>
              <widget class="QLineEdit" name="nickname">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#nickname{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #c0c2db;
+}
+
+#nickname:hover{
+	background : rgb(119, 212, 255);
+border: 2px #c0c2db;
+}</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
               </property>
@@ -283,6 +408,29 @@
             </item>
             <item>
              <widget class="QLineEdit" name="password">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#password{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #c0c2db;
+}
+
+
+#password:hover{
+	background : rgb(119, 212, 255);
+   border: 2px solid #c0c2db;
+}</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
               <property name="echoMode">
                <enum>QLineEdit::Password</enum>
               </property>
@@ -293,6 +441,30 @@
             </item>
             <item>
              <widget class="QLineEdit" name="password2">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#password2{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #c0c2db;
+}
+
+
+
+#password2:hover{
+	background : rgb(119, 212, 255);
+    border: 2px #c0c2db;
+}</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
               <property name="echoMode">
                <enum>QLineEdit::Password</enum>
               </property>
@@ -308,21 +480,57 @@
        </layout>
       </item>
       <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <widget class="QPushButton" name="create">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#create{
+
+background-image: url(:/imagenes/crear.png);
+border:5px solid #42aaf4; border-radius: 10px;
+
+}
+
+#create:hover
+{
+ border:7px solid #5cfdff;
+}
+</string>
+        </property>
         <property name="text">
-         <string>Create</string>
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
       <item>
-       <spacer name="horizontalSpacer">
+       <spacer name="verticalSpacer_3">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>40</width>
-          <height>20</height>
+          <width>20</width>
+          <height>40</height>
          </size>
         </property>
        </spacer>
@@ -331,6 +539,52 @@
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="imagen">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>601</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>91</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#imagen
+{
+    border: 5px solid gray;
+    border-radius: 15px;
+}
+#imagen:hover
+{
+ border:5px solid #42aaf4
+
+}
+#imagen:pressed{
+ border-color: #5cfdff
+}</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNoAutoUppercase</set>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <zorder>imagen</zorder>
+  <zorder>salir</zorder>
+  <zorder>layoutWidget</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>450</height>
+    <width>624</width>
+    <height>424</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -22,10 +22,10 @@
   <widget class="QPushButton" name="atras">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>410</y>
-     <width>91</width>
-     <height>31</height>
+     <x>8</x>
+     <y>390</y>
+     <width>100</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -43,7 +43,7 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>150</x>
      <y>258</y>
      <width>314</width>
      <height>102</height>
@@ -58,11 +58,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel7{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/7 bloqueado.png);
+}
+#nivel7:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 7</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -86,11 +96,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel8{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/8 bloqueado.png);
+}
+#nivel8:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 8</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -102,14 +122,24 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel9{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/9 bloqueado.png);
+}
+#nivel9:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 9</string>
+       <string/>
       </property>
       <property name="default">
        <bool>false</bool>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -121,7 +151,7 @@
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>150</x>
      <y>150</y>
      <width>314</width>
      <height>102</height>
@@ -136,11 +166,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel4{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/4 bloqueado.png);
+}
+#nivel4:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 4</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -152,11 +192,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel5{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/5 bloqueado.png);
+}
+#nivel5:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 5</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -168,11 +218,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel6{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/6 bloqueado.png);
+}
+#nivel6:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 6</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -184,7 +244,7 @@
   <widget class="QWidget" name="horizontalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>150</x>
      <y>42</y>
      <width>314</width>
      <height>102</height>
@@ -199,11 +259,24 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel1{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/1.png);
+
+}
+#nivel1:hover{
+ border:10px solid #5cfdff;
+}
+
+
+</string>
+      </property>
       <property name="text">
-       <string>Scene 1</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -215,11 +288,21 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel2{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/2 bloqueado.png);
+}
+#nivel2:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 2</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -231,16 +314,196 @@
         <height>100</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#nivel3{
+border:5px solid #42aaf4; border-radius: 15px;
+	background-image: url(:/imagenes/niveles/3 bloquead.png);
+}
+#nivel3:hover{
+ border:10px solid #5cfdff;
+}
+</string>
+      </property>
       <property name="text">
-       <string>Scene 3</string>
+       <string/>
       </property>
       <property name="flat">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="imagen">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>624</width>
+     <height>424</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ravie</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#imagen
+{
+    border: 5px solid gray;
+    border-radius: 15px;
+}
+#imagen:hover
+{
+ border:5px solid #42aaf4
+
+}
+#imagen:pressed{
+ border-color: #5cfdff
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>559</x>
+     <y>2</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#back
+{
+	background-image: url(:/imagenes/sended.png)
+}
+#back:hover
+{
+	background-image:url(:/imagenes/sended111.png)
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cerrar">
+   <property name="geometry">
+    <rect>
+     <x>591</x>
+     <y>0</y>
+     <width>34</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cerrar
+{
+background-image: url(:/imagenes/cerrar1.png);
+}
+
+#cerrar:hover
+{
+background-image: url(:/imagenes/cerrar.png);
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cargar">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>380</y>
+     <width>35</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cargar{
+
+	background-image: url(:/imagenes/reload.png);
+
+}
+#cargar:hover{
+
+background-image: url(:/imagenes/reload1.png);
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="puntaje">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>64</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/imagenes/gif puntaje/puntaje.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="valor">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>30</y>
+     <width>81</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ravie</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#valor{color:#ffd700;}
+#valor:hover{color:rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>imagen</zorder>
+  <zorder>atras</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>horizontalLayoutWidget_2</zorder>
+  <zorder>horizontalLayoutWidget_3</zorder>
+  <zorder>back</zorder>
+  <zorder>cerrar</zorder>
+  <zorder>cargar</zorder>
+  <zorder>puntaje</zorder>
+  <zorder>valor</zorder>
  </widget>
  <resources/>
  <connections/>
